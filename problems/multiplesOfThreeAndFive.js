@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 function multiplesOfThreeAndFive(upto) {
     let sum = 0;

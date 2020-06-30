@@ -1,6 +1,10 @@
 "use strict";
 
 
+// The limit upto which we need to find the multliples.
+const upperbound = 1000;
+
+
 /**
  * Find the sum of all the multiples of 3 and 5 upto 1000.
  * 
@@ -9,16 +13,16 @@
  */
 function findSumOfMultiplesOfThreeAndFive(upto) {
     // Initialise the sum.
-    let sum = 0;
+    let sumOfMultiplesOfThreeAndFive = 0;
     for (let i = 0; i < upto; i++) {
         // Check if the number is divisible by 3 or 5. If so, add it to the sum.
         if ((i % 3 === 0) || (i % 5 === 0)) {
-            sum += i;
+            sumOfMultiplesOfThreeAndFive += i;
         }
     }
-    return sum;
+    return sumOfMultiplesOfThreeAndFive;
 }
 
 
 console.log("The sum of all the multiples of 3 and 5 are "
-    + findSumOfMultiplesOfThreeAndFive(1000));
+    + findSumOfMultiplesOfThreeAndFive(upperbound));
